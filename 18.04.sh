@@ -61,7 +61,7 @@ sudo echo alias l=\"ls -alFh\" >> ${rc}
 source ${rc}
 
 # DOCKER
-sudo apt-get install \
+sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -73,7 +73,7 @@ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 # golang
