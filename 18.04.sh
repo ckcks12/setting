@@ -83,6 +83,18 @@ sudo apt-get install golang-go
 sudo echo export GOPATH=~/.go > ~/.zsh
 source $HOME/.zshrc
 
+# aws cli autocompleter
+sudo pip3 install awscli
+testpath=/usr/local/bin/aws_zsh_completer.sh
+if [ -f "$testpath" ]; then
+    path=$testpath
+fi
+testpath=/usr/local/aws/bin/aws_zsh_completer.sh
+if [ -f "$testpath" ]; then
+    path=$testpath
+fi
+sudo echo source $path >> ~/.zshrc
+
 # server setting
 sudo sysctl fs.inotify.max_user_watches=524288
 
