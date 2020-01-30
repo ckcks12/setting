@@ -79,7 +79,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 # golang
 sudo add-apt-repository -y ppa:longsleep/golang-backports
 sudo apt-get update -y
-sudo apt-get install golang-go
+sudo apt-get install golang-go -y
 sudo echo export GOPATH=~/.go > ~/.zsh
 source $HOME/.zshrc
 
