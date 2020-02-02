@@ -13,6 +13,7 @@ echo archive server to korea kakao? y/n
 read a
 if [[ $a == y ]]; then
     sudo sed -i 's/kr.archive.ubuntu.com/ftp.daumkakao.com/' /etc/apt/sources.list
+    sudo sed -i 's/archive.ubuntu.com/ftp.daumkakao.com/' /etc/apt/sources.list
 fi
 
 # update
