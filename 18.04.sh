@@ -44,7 +44,7 @@ EOF
 
 # node
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install -y nodejs npm
+sudo apt install -y nodejs
 sudo npm i -g pm2 gtop yarn
 
 # vimrc setting
